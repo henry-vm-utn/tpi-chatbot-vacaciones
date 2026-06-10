@@ -1,0 +1,32 @@
+CASOS DE PRUEBA - CHATBOT DE VACACIONES
+
+Caso 1 - Camino feliz
+Legajo: 1001
+Fecha inicio: 10/07/2026
+Fecha fin: 15/07/2026
+Resultado esperado: Solicitud preaprobada.
+
+Caso 2 - Legajo inexistente
+Legajo: 9999
+Resultado esperado: El bot solicita reingresar el legajo.
+
+Caso 3 - Fecha invalida
+Legajo: 1001
+Fecha inicio: 10-07-2026
+Resultado esperado: El bot informa formato invalido.
+
+Caso 4 - Saldo insuficiente
+Legajo: 1002
+Fecha inicio: 01/08/2026
+Fecha fin: 10/08/2026
+Resultado esperado: Solicitud rechazada por saldo insuficiente.
+
+Caso 5 - Derivacion a RRHH
+Legajo: 1003
+Fecha inicio: 01/09/2026
+Fecha fin: 18/09/2026
+Resultado esperado: Solicitud derivada a RRHH.
+
+Caso 6 - Cancelacion
+Entrada: cancelar
+Resultado esperado: Operacion cancelada.
