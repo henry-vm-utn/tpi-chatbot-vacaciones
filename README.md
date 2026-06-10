@@ -1,47 +1,48 @@
-# TPI Chatbot Vacaciones
-
-Este proyecto es un chatbot desarrollado como Trabajo Práctico Integrador.  
-El objetivo del chatbot es ayudar a usuarios a consultar información relacionada con vacaciones, destinos, recomendaciones o planificación de viajes.
+# TPI - Chatbot de Solicitud de Vacaciones
 
 ## Descripción
 
-El chatbot permite interactuar con el usuario mediante mensajes, respondiendo consultas de forma automática según la lógica implementada en el proyecto.
+Este proyecto corresponde al Trabajo Práctico Integrador de la materia Organización Empresarial.
 
-## Funcionalidades
+Se desarrolló un simulador de chatbot para gestionar solicitudes de vacaciones del personal de una empresa ficticia llamada TecnoGestión S.R.L.
 
-- Responder consultas del usuario.
-- Simular una conversación tipo chatbot.
-- Brindar información relacionada con vacaciones.
-- Organizar respuestas según el flujo definido en el sistema.
+## Objetivo
+
+El objetivo es mejorar un proceso administrativo manual mediante una solución automatizada simple. El bot permite ordenar la solicitud, validar datos, consultar saldo disponible y registrar el resultado.
+
+## Funcionalidades del bot
+
+El bot permite:
+
+- Validar el legajo del empleado.
+- Consultar saldo de vacaciones.
+- Validar fechas ingresadas.
+- Calcular días solicitados.
+- Registrar solicitudes preaprobadas.
+- Rechazar solicitudes por saldo insuficiente.
+- Derivar solicitudes mayores a 15 días a RRHH.
+- Cancelar la operación.
 
 ## Tecnologías utilizadas
 
-- HTML
-- CSS
-- JavaScript
-
-## Cómo usar el proyecto
-
-1. Descargar o clonar el repositorio.
-2. Abrir la carpeta del proyecto.
-3. Ejecutar el archivo principal en el navegador.
-
-Por ejemplo, si el proyecto tiene un archivo `index.html`, abrirlo directamente desde el navegador.
+- Python.
+- CSV como base de datos simulada.
+- BPMN para modelado del proceso.
+- GitHub para control de versiones.
 
 ## Estructura del proyecto
 
-```text
-tpi-chatbot-vacaciones/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+- `src`: contiene el código del chatbot.
+- `data`: contiene la base de datos simulada.
+- `bpmn`: contiene los diagramas AS-IS y TO-BE.
+- `pruebas`: contiene los casos de prueba.
+- `capturas`: contiene evidencias del trabajo.
+- `docs`: contiene el informe final.
 
-## Autor
+## Ejecución
 
-Henry VM
+Para ejecutar el chatbot:
 
-## Estado del proyecto
+```bash
 
-Proyecto en desarrollo.
+python src/bot_vacaciones.py
